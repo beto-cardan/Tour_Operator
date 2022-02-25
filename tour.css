@@ -60,7 +60,7 @@ nav ul li{
   font-size: 1.5rem; 
   z-index: calc(-1);
   border-radius: 5% 20% 5% 20%;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .box{
   font-size: 20px;
@@ -162,6 +162,7 @@ h2 span{
   display: inline-block;
   animation: animate 4s linear forwards;
   color: #fff;
+  box-shadow: #59598510 4px 4px;
 }
 h3{
  
@@ -221,33 +222,37 @@ h3 span:nth-child(1){
 }
 
 .btn{
-  border: 2px solid rgba(16, 17, 17, 0.719);
-  border-radius: 50% 20% 50% 20%;
-  background-color:#93cfb98c;
-  color: #fff;
-  font-size: 16px;
-  font-family: 'Redressed', cursive;
   cursor: pointer;
-  text-align: center;
+  padding: 12px;
+  background-image: linear-gradient(#fd660232,#3590be50,rgba(255, 255, 255, 0.061));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  background-position-x: right;
+  transition: background-size 500ms;
+  height: 50px;
+  background-color:#8a9e3a2a ;
+  border-radius: 12% 12% 12% 12%;
+  width: 150px;
+  box-shadow: #2d2d2e59 2px 2px;
+  
+
 }
 
 .btn:hover{
-  background: rgba(240, 243, 73, 0.979);
-  transform: rotate(360deg);
-  transition: 0.4s;
-  border: 3px groove rgba(0, 255, 128, 0.274);
+  background-size: 100% 100%;
+  background-position-x: left;
 }
 
 @media (max-width:768px){
     
   nav ul li{
-      float: left;
-      text-align: center;
-      width: 20%;
-      color: #fff;
-      font-size: 20px;
-      padding-top: .9rem;
-      padding-bottom: .9rem;
+    float: left;
+    text-align: center;
+    width: 20%;
+    color: #fff;
+    font-size: 20px;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
          
     }
     
@@ -298,8 +303,9 @@ h3 span:nth-child(1){
   margin: 20px;
 }
 
-body{
+  body{
   background-size: 100%;
+
 }
 
 input[type=text], select, textarea{
