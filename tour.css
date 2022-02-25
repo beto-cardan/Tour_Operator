@@ -6,6 +6,8 @@
 
 
 body{
+  margin: 0;
+  padding: 0;
   background-color: rgba(160, 245, 245, 0.281);
   background-image: url(pics/tucano.jpg);
   background-size: 100%;
