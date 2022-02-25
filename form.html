@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="favcon/favicon3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="tour.css">
+    <link rel="stylesheet" href="css/bootstrap_icon/bootstrap-icons.css">
+    <script src="js/tour.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+
+                <a href="home.html">
+                    <li><i class="bi bi-house"></i></li>
+                </a>
+
+                <a href="about.html">
+                    <li>BraTour</li>
+                </a>
+                <a href="destinos.html">
+                    <li>Destinos</li>
+                </a>
+                <a href="form.html">
+                    <li>Contatos</li>
+                </a>
+
+                <a class="toggle" href="#">
+                    <li class="bar"><i class="bi bi-list"></i></li>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Nome Completo</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Digite seu Nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Digite aqui o seu email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Assuntos</label>
+                </div>
+                <div class="col-75">
+                    <select id="assuntos" name="assuntos">
+                        <option value="desntinos">Destinos</option>
+                        <option value="orcamento">Orçamento</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Mensagem</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="msg" name="msg" placeholder="Entre em contanto conosco"
+                        style="height:100px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+body{
+  background-color: rgba(160, 245, 245, 0.281);
+  background-image: url(pics/tucano.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header{
+  display: inline-block;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+  background-color:#2d2d2e;
+  font-family: 'Caveat', cursive;
+  box-shadow: 3px 2px #0d0d0e11; 
+  width:100%;
+}
+
+.nav-bar ul a li:hover{
+    
+  transition: 0.3s ease;
+  text-transform: lowercase;
+  cursor: pointer;
+   
+}
+
+nav ul li{
+  display: inline-block;
+  justify-content:start;
+  width: 23%;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  list-style: none;
+  line-height: 4px;
+    
+}
+
+
+.flex{
+  display: fixed;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.103);
+  padding: 10px;
+  font-size: 1.5rem; 
+  z-index: calc(-1);
+  border-radius: 5% 20% 5% 20%;
+  margin-top: 10px;
+}
+.box{
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+  margin-top: 5%;
+  padding: 20px;
+  font-family: arial;
+  float: left;
+  width: 30%;
+}
+
+h4 {
+  color: #000;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+
+}
+.price {
+  color: rgb(7, 7, 7);
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+p{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: rgb(22, 22, 22);
+    
+}
+.icon ul li {
+    float: left;
+    width: 20%;
+    font-size: 15px;
+    color:#fff;
+    list-style: none;
+    text-align: center;
+
+}
+.icon ul li:hover{
+  background: rgba(93, 91, 91, 0.548);
+ 
+} 
+.toggle{
+  display: none;
+}
+
+h1{
+  
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #ffff;
+  font-size: 1.5em;
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.2em;
+  
+}
+h1 span{
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
+  color: #fff;
+}
+
+h2{
+ 
+  transform: translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-right: 0;
+  font-size: 1.5em;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 0.2em;
+}
+
+
+h2 span{
+  opacity: 0;
+  display: inline-block;
+  animation: animate 4s linear forwards;
+  color: #fff;
+}
+h3{
+ 
+  transform: translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-right: 0;
+  font-size: 1.5em;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+h3 span{
+  opacity: 0;
+  animation: animate 3s linear forwards;
+  color: rgb(26, 24, 24);
+}
+
+
+@keyframes animate{
+  0%{
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+  }
+
+  100%{
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0);
+  }
+
+}
+h1 span:nth-child(1){
+  animation-delay: 1s;
+}
+h1 span:nth-child(2){
+  animation-delay: 2.5s;
+}
+h1 span:nth-child(3){
+  animation-delay: 3s;
+}
+h1 span:nth-child(4){
+  animation-delay: 3.75s;
+}
+h1 span:nth-child(5){
+  animation-delay: 4.5s;
+}
+
+
+h2 span:nth-child(1){
+  animation-delay: 5s;
+}
+h3 span:nth-child(1){
+  animation-delay: 8s;
+}
+
+.btn{
+  border: 2px solid rgba(16, 17, 17, 0.719);
+  border-radius: 50% 20% 50% 20%;
+  background-color:#93cfb98c;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Redressed', cursive;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover{
+  background: rgba(240, 243, 73, 0.979);
+  transform: rotate(360deg);
+  transition: 0.4s;
+  border: 3px groove rgba(0, 255, 128, 0.274);
+}
+
+@media (max-width:768px){
+    
+  nav ul li{
+      float: left;
+      text-align: center;
+      width: 20%;
+      color: #fff;
+      font-size: 20px;
+      padding-top: .9rem;
+      padding-bottom: .9rem;
+         
+    }
+    
+
+  .toggle{
+    display: inline-flex;
+    position: fixed;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 20px;
+    
+  }
+  
+.card {
+  display: contents;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.card {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.card img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .box{
+  font-size: 12px;
+  margin: 20px;
+}
+
+body{
+  background-size: 100%;
+}
+
+}
+
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  
+}
+input[type=email], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #0482d6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #06d489;
+  color: white;
+  padding: 22px 40px;
+  transform: rotate(360deg);
+  transition: 0.3s;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+ 
+}
