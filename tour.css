@@ -300,10 +300,6 @@ body{
   background-size: 100%;
 }
 
-}
-
-
-
 input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
@@ -370,13 +366,16 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 50px;
+  padding: 100px;
+}
+.flex {
+  padding: 100px;
 }
 
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
+
+.col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
   }
  
 }
