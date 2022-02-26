@@ -11,7 +11,7 @@
 }
 
 body{
-  background-color: rgba(160, 245, 245, 0.281);
+  background-color: rgba(18, 19, 19, 0.281);
   background-image: url(pics/tucano.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ h4 {
 
 }
 .price {
-  color: rgb(7, 7, 7);
+  color: #fff;
   font-size: 22px;
 }
 
@@ -110,7 +110,7 @@ h4 {
 p{
     text-align: center;
     font-family: 'Caveat', cursive;
-    color: rgb(22, 22, 22);
+    color: #fff;
     
 }
 .icon ul li {
@@ -183,7 +183,7 @@ h3{
 h3 span{
   opacity: 0;
   animation: animate 3s linear forwards;
-  color: rgb(26, 24, 24);
+  color: #fff;
 }
 
 
