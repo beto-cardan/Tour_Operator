@@ -3,11 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-
-body{
+*
+{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body{
   background-color: rgba(160, 245, 245, 0.281);
   background-image: url(pics/tucano.jpg);
   background-size: 100%;
@@ -61,6 +64,7 @@ nav ul li{
   z-index: calc(-1);
   border-radius: 5% 20% 5% 20%;
   margin-top: 30px;
+  
 }
 .box{
   font-size: 20px;
@@ -376,8 +380,11 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 100px;
 }
-.flex {
-  padding: 100px;
+.box {
+  min-width: auto;
+  max-width: auto;
+  min-height: calc(100vh - 56px);
+  padding: 100px; 
 }
 
 
